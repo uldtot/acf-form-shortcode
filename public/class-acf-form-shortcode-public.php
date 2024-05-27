@@ -66,7 +66,7 @@ class Acf_Form_Shortcode_Public {
 			return;
 
 		global $post;
-		if( has_shortcode( $post->post_content, 'show_acf_form' ) ){
+		if( $post && has_shortcode( $post->post_content, 'show_acf_form' ) ){
 			acf_form_head();
 
 		}
